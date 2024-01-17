@@ -2,7 +2,7 @@
 
 Welcome to the View Bot CLI developed by plinkon.
 
-**IMPORTANT:** In order for this to work, you need to be logged into a different account than the account that posted the video on your default browser; otherwise, this will not work.
+**IMPORTANT:** In order for this to work, you need to be logged into a different account than the account that posted the video on your default browser; otherwise, this will not work. Also make sure your default browser auto deletes tabs.
 
 ## Table of Contents
 - [Introduction](#introduction)
