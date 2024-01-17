@@ -11,6 +11,7 @@ Welcome to the View Bot CLI developed by plinkon.
 - [Options](#options)
 - [About](#about)
 - [Version](#version)
+- [Other](#other)
 
 ## Introduction
 
@@ -72,3 +73,7 @@ Provides information about the program, its purpose, and a version update.
 ## Version
 
 Current version: 1.1
+
+## Other
+
+I TAKE NO RESPONSIBILITY FOR ANYTHING THAT HAPPENS TO ANYONE WHO USES THIS TOOL.
