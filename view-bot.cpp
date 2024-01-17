@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 #include <conio.h>
 #include <string>
 #include <istream>
@@ -61,8 +61,8 @@ void options()
     cout << "                          |               (type the number on your keyboard)              |" << endl;
     cout << "                          |                                                               |" << endl;
     cout << "                          \033[94m|   1: HOME                                            \033[94m2: RUN   |" << endl;
-    cout << "                          |   --------                \033[94m3: ABOUT                   -------  |" << endl;
-    cout << "                          |                           ---------                           |" << endl;
+    cout << "                          |   --------        \033[94m3: ABOUT        4: GitHub          -------  |" << endl;
+    cout << "                          |                   ---------        ----------                 |" << endl;
     cout << "                          \033[2m|                     (developed by plinkon)                    |" << endl;
     cout << "                          |-------|-------|-------|-------|-------|-------|-------|-------|\033[0m" << endl;
 
@@ -71,10 +71,10 @@ void options()
 int main()
 {
     console();
-    cout << "\033[94mWelcome to the View Bot CLI developed by plinkon\033[0m\n";
+    cout << "\033[94mWelcome to the View Bot CLI developed by plinkon\033[0m\n\n";
     info();
-    cout << "\033[1;31mIMPORTANT! IN ORDER FOR THIS TO WORK, YOU NEED TO BE LOGGED INTO A DIFFERENT\nACCOUNT THAN THE ACCOUNT WHO POSTED THE VIDEO ON YOUR DEFAULT BROWSER. OTHERWISE THIS WILL NOT WORK.\033[0m\n\n";
-    cout << "\033[96m[\033[94mTIP\033[96m]\033[94m: You can navagate the program by typing the numbers 1-3 on your keyboard. Each number goes to a certian menu.\n";
+    cout << "\033[1;31mIMPORTANT! IN ORDER FOR THIS TO WORK, YOU NEED TO BE LOGGED INTO A DIFFERENT\nACCOUNT THAN THE ACCOUNT WHO POSTED THE VIDEO ON YOUR DEFAULT BROWSER. ALSO MAKE SURE THAT YOUR DEFAULT BROWSER AUTO CLOSES TABS ON CLOSE OTHERWISE THIS WILL NOT WORK.\033[0m\n\n";
+    cout << "\033[96m[\033[94mTIP\033[96m]\033[94m: You can navagate the program by typing the numbers 1-4 on your keyboard. Each number goes to a certian menu.\n";
     options();
     while (true)
     {
@@ -324,10 +324,17 @@ int main()
             console();
             cout << "\033[96mABOUT:\033[94m\nThis is a program made entirely by plinkon. It works as a view bot for youtube.\n";
             cout << "It opens a bunch of tabs with a youtube video in the default browser and that video will gain views.\nThe longer you run this program, the more views you get.\n";
-            cout << "This program might or might not recive future updates. Who knows, we just have to wait and see.";
-            cout << "\033[1;31m\n\nIMPORTANT! IN ORDER FOR THIS TO WORK, YOU NEED TO BE LOGGED INTO A DIFFERENT\nACCOUNT THAN THE ACCOUNT WHO POSTED THE VIDEO ON YOUR DEFAULT BROWSER. OTHERWISE THIS WILL NOT WORK.\033[0m\n";
-            cout << "\n\nversion: 1.1";
+            cout << "This program might or might not recive future updates. Who knows, we just have to wait and see.\n";
+            cout << "\033[1;31mI TAKE NO RESPONSIBILITY FOR ANYTHING THAT HAPPENS TO ANYONE THAT USES THIS TOOL.\n\n";
+            info();
+            cout << "\033[1;31mIMPORTANT! IN ORDER FOR THIS TO WORK, YOU NEED TO BE LOGGED INTO A DIFFERENT\nACCOUNT THAN THE ACCOUNT WHO POSTED THE VIDEO ON YOUR DEFAULT BROWSER. ALSO MAKE SURE THAT YOUR DEFAULT BROWSER AUTO CLOSES TABS ON CLOSE OTHERWISE THIS WILL NOT WORK.\n";
+            cout << "\n\n\033[94mversion: 1.15";
             options();
+        }
+
+        if (key == '4') // github repo
+        {
+            OpenURL("https://github.com/Plinkon/view-bot");
         }
     }
 
